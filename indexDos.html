@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Index 2</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <!-- Navbar-dark es para el color de la navbar y bg-dark es para el color de fondo de la navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Contenedor -->
+        <!-- my es m de margin y "y" es en el eje "Y" y el numero es la cantidad de margin -->
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h2>Solicitar Personal</h2>
+                    <form>
+                        <div class="my-3 mb-3">
+                            <label for="proyecto" class="form-label">Proyecto</label>
+                            <input type="text" class="form-control" id="proyecto" placeholder="Nombre de proyecto...">
+                        </div>
+                        <div class="my-3 mb-3">
+                            <label for="descripcion" class="form-label">Descripcion de Tarea</label>
+                            <textarea class="form-control" id="descripcion" rows="3" placeholder="Breve descripcion..."></textarea>
+                        </div>
+                        <div class="my-3 mb-3">
+                            <label for="programadores" class="form-label">Cantidad de Programadores</label>
+                            <input type="number" class="form-control" id="programadores">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success">Guardar</button>
+                            <button class="btn">Deshacer</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <h2>Lenguajes</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Lenguajes</th>
+                                <th>Cantidad de Programadores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>JavaScript</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Python</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>SQL</td>
+                                <td>42</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>C#</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
